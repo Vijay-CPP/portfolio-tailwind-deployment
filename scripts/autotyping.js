@@ -5,7 +5,7 @@ const Text = ['Programmer', 'Web Developer', 'Web Designer'];
 const exampleTyping = new AutoTyping('#autotype', Text, {
     typeSpeed: 100,
     deleteSpeed: 100,
-    waitBeforeDelete: 2000,
+    waitBeforeDelete: 1000,
     waitBetweenWords: 500,
 });
 exampleTyping.start()
