@@ -8,4 +8,5 @@ const exampleTyping = new AutoTyping('#autotype', Text, {
     waitBeforeDelete: 1000,
     waitBetweenWords: 500,
 });
+
 exampleTyping.start()
