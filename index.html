@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- External Styles - Development -->
-    <link rel="stylesheet" href="./styles/output.css">
-
     <!-- External Styles - Production -->
     <link rel="stylesheet" href="styles/final.css">
 
@@ -17,8 +14,12 @@
 
 <body class="h-screen">
 
+    <!-- Dark Mode -->
+    <img class="dark-mode-btn fixed z-50 w-[18vw] bottom-[6vh] right-5 md:hidden cursor-pointer"
+    src="./images/dark-mode.png" alt="dark-mode">
+
     <!-- Intro section -->
-    <div
+    <div id="home"
         class="relative h-[65vh] lg:h-screen bg-gradient-to-t from-cyan-200 overflow-hidden dark:bg-slate-700  dark:bg-gradient-to-t dark:from-slate-800">
 
         <!-- Navbar -->
@@ -29,34 +30,34 @@
                 <div class="ml-5 flex items-center gap-2 ">
                     <img class="w-11 shadow rounded-full" src="./images/profile-circle.png" alt="profile-logo">
 
-                    <span class="font-sacramento text-2xl font-semibold text-cyan-800 dark:text-cyan-300">Vijay</span>
+                    <span class="font-sacramento text-2xl text-cyan-800 dark:text-cyan-300">Vijay</span>
                 </div>
 
                 <!-- Links -->
                 <ul class="hidden md:flex space-x-8 font-semibold text-gray-700">
                     <li class="hover:text-cyan-600 dark:text-cyan-300 hover:dark:text-white">
-                        <a href="#">Home</a>
+                        <a href="#home">Home</a>
                     </li>
 
                     <li class="hover:text-cyan-600 dark:text-cyan-300 hover:dark:text-white">
-                        <a href="#">About Me</a>
+                        <a href="#about">About Me</a>
                     </li>
 
                     <li class="hover:text-cyan-600 dark:text-cyan-300 hover:dark:text-white">
-                        <a href="#">Skills</a>
+                        <a href="#skills">Skills</a>
                     </li>
 
                     <li class="hover:text-cyan-600 dark:text-cyan-300 hover:dark:text-white">
-                        <a href="#">Projects / Work</a>
+                        <a href="#projects">Projects / Work</a>
                     </li>
 
                     <li class="hover:text-cyan-600 dark:text-cyan-300 hover:dark:text-white">
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
 
                 <!-- Dark Mode -->
-                <img id="dark-mode-btn" class="hidden md:w-12 md:block cursor-pointer" src="./images/dark-mode.png"
+                <img class="dark-mode-btn hidden md:w-12 md:block cursor-pointer" src="./images/dark-mode.png"
                     alt="dark-mode">
 
                 <!-- Hamburger Menu Btn -->
@@ -70,32 +71,24 @@
                 <ul id="ham-menu"
                     class="hidden bg-white dark:bg-slate-700 text-cyan-900 dark:text-gray-100 absolute left-0 top-0 w-full h-screen space-y-8 text-center z-10">
                     <li class="mt-[30%] p-2 mx-auto w-1/2 bg-slate-300 dark:bg-slate-500 rounded-md">
-                        <a href="#">Home</a>
+                        <a href="#home">Home</a>
                     </li>
 
                     <li class="p-2 mx-auto w-1/2 bg-slate-300 dark:bg-slate-500 rounded-md">
-                        <a href="#">About Me</a>
+                        <a href="#about">About Me</a>
                     </li>
 
                     <li class="p-2 mx-auto w-1/2 bg-slate-300 dark:bg-slate-500 rounded-md">
-                        <a href="#">Skills</a>
+                        <a href="#skills">Skills</a>
                     </li>
 
                     <li class="p-2 mx-auto w-1/2 bg-slate-300 dark:bg-slate-500 rounded-md">
-                        <a href="#">Projects</a>
+                        <a href="#projects">Projects</a>
                     </li>
 
                     <li class="p-2 mx-auto w-1/2 bg-slate-300 dark:bg-slate-500 rounded-md">
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
-
-                    <li id="dark-btn-list" class="p-2 w-1/2 mx-auto">
-                        <!-- Dark Mode -->
-                        <img id="dark-mode-btn-ham" class="w-16 mx-auto md:block cursor-pointer"
-                            src="./images/dark-mode.png" alt="dark-mode">
-                    </li>
-                </ul>
-
             </div>
         </nav>
 
@@ -117,9 +110,10 @@
         <div
             class="hidden z-[6] lg:flex flex-col absolute top-0 bottom-0 m-auto right-16 bg-white dark:bg-slate-600 p-4 h-fit w-[30vw] gap-5 rounded-lg shadow-xl">
             <h1 class="text-4xl font-semibold text-cyan-800  dark:text-cyan-300">Hi, I'm Vijay</h1>
-            <p class="text-gray-600 dark:text-cyan-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Aliquid magnam dolore
-                facilis. Asperiores ut labore cupiditate odit?</p>
+            <p class="text-gray-600 dark:text-cyan-400">I am a full stack web developer who loves to solve problems,
+                also excited to take on new challenges and push my skills to the limit. Whether you need a brand-new web
+                application built from scratch or an existing one optimized, I have the skills and experience to help
+                you achieve your goals.</p>
             <a class="bg-cyan-700 dark:bg-cyan-500 w-fit py-2 px-4 rounded-md text-white shadow-sm hover:bg-cyan-900"
                 href="#contact">Hire Me</a>
         </div>
@@ -127,9 +121,9 @@
     </div>
 
     <!-- About Section -->
-    <div class="h-fit py-[10vh] md:h-[60vh] lg:h-[80vh] my-auto flex items-center justify-center dark:bg-slate-700">
+    <div id="about" class="h-fit py-[10vh] my-auto flex items-center justify-center dark:bg-slate-700">
 
-        <div class="container mx-auto flex flex-col md:flex-row gap-10 w-[70vw] items-center">
+        <div class="container mx-auto flex flex-col md:flex-row gap-10 w-[80vw] items-center">
 
             <!-- Left -->
             <div class="relative">
@@ -143,31 +137,54 @@
 
                 <h2 class="text-3xl text-cyan-900 dark:text-cyan-100">I'm Vijay</h2>
 
-                <p class="dark:text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
-                    dolore. At, blanditiis.
-                    Consequuntur dolorem alias, omnis repellat, nulla, inventore suscipit totam aspernatur magni
-                    obcaecati labore? Distinctio pariatur quam quia autem?</p>
+                <p class="text-gray-700 dark:text-gray-300">Welcome to my portfolio! I am currently a third-year
+                    undergraduate studying B.Tech at Haldia Institute of Technology. I am extremely passionate about
+                    software development and am excited to showcase some of my work and skills in this portfolio. Over
+                    the past few years, I have been honing my skills in full stack web development, and I have become
+                    proficient in various programming languages, frameworks, and tools such as HTML, CSS, JavaScript,
+                    React, Node.js, Express.js, and MongoDB, to name a few. </p>
+
+                <!-- Table -->
+                <div class="py-2">
+                    <h1 class="text-2xl text-teal-800 dark:text-cyan-400">Education</h1>
+                    <div class="flex gap-5 lg:gap-10 flex-col md:flex-row">
+
+                        <div class="flex flex-col">
+                            <p class="text-gray-700 dark:text-gray-300">2020-2024 | Haldia Institute of Technology</p>
+                            <p class="text-gray-700 dark:text-gray-300">Electrical Engineering</p>
+                            <p class="text-gray-700 dark:text-gray-300">YGPA - 9.43</p>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <p class="text-gray-700 dark:text-gray-300">2018-2020 | DAV Public School, Haldia</p>
+                            <p class="text-gray-700 dark:text-gray-300">Intermediate with PCM & CS</p>
+                            <p class="text-gray-700 dark:text-gray-300">Score - 93.8%</p>
+                        </div>
+                    </div>
+
+                </div>
 
                 <!-- Links -->
                 <div class="flex flex-wrap gap-5 lg:w-[50vw]">
 
                     <a class="px-3 p-2 bg-indigo-600 hover:shadow-xl transition ease-in-out duration-500
-                     rounded-md text-white font-semibold shadow-md" href=""><i class="fa-solid fa-file"></i> Resume</a>
+                     rounded-md text-white font-semibold shadow-md"
+                        href="https://drive.google.com/file/d/1CqywEVIk24fO2Q9tknGy2lKIfbvcwHmM/view?usp=share_link"
+                        target="_blank"><i class="fa-solid fa-file"></i> Resume</a>
 
                     <a class="px-3 p-2 bg-gray-600 hover:shadow-xl transition ease-in-out duration-500 rounded-md text-white font-semibold shadow-md"
-                        href=""><i class="fa-brands fa-github"></i> GitHub</a>
+                        href="https://github.com/Vijay-CPP" target="_blank"><i class="fa-brands fa-github"></i>
+                        GitHub</a>
 
-                    <a class="px-3 p-2 bg-blue-900 hover:shadow-xl transition ease-in-out duration-500 rounded-md text-white font-semibold shadow-md"
-                        href=""><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a class="px-3 p-2 bg-blue-700 hover:shadow-xl transition ease-in-out duration-500 rounded-md text-white font-semibold shadow-md"
+                        href="https://www.linkedin.com/in/vijaytamada/"><i class="fa-brands fa-linkedin"
+                            target="_blank"></i> LinkedIn</a>
 
                     <a class="px-3 p-2 bg-orange-400 hover:shadow-xl transition ease-in-out duration-500 rounded-md text-white font-semibold shadow-md"
-                        href="">LeetCode</a>
-
-                    <a class="px-3 p-2 bg-green-600 hover:shadow-xl transition ease-in-out duration-500 rounded-md text-white font-semibold shadow-md"
-                        href="">HackerRank</a>
+                        href="https://leetcode.com/vijay_cpp/" target="_blank">LeetCode</a>
 
                     <a class="px-3 p-2 bg-teal-700 hover:shadow-xl transition ease-in-out duration-500 rounded-md text-white font-semibold shadow-md"
-                        href=""><i class="fa-solid fa-link"></i> Contact Me</a>
+                        href="#contact"><i class="fa-solid fa-link"></i> Contact Me</a>
                 </div>
 
             </div>
@@ -177,8 +194,8 @@
     </div>
 
 
-    <!-- Projects -->
-    <div class=" bg-teal-200 dark:bg-slate-800">
+    <!-- Skills -->
+    <div id="skills" class=" bg-teal-200 dark:bg-slate-800">
 
         <h1
             class="text-4xl font-semibold text-teal-900 dark:text-cyan-300 text-center  pt-[10vh] mb-[5vh] lg:pt-[15vh] lg:mb-[5vh]">
@@ -187,38 +204,74 @@
         <div
             class="mx-auto flex gap-4 flex-wrap w-[90vw] md:w-[60vw] lg:w-[50vw] justify-center pb-[10vh] lg:pb-[15vh]">
 
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">C/C++
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+                C/C++
             </p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">Python
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+                Python
             </p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">HTML</p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">CSS</p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">Tailwind
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+                HTML</p>
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
                 CSS</p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+                Tailwind
+                CSS</p>
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
                 BootStrap</p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
                 Javascript</p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">Node Js
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+                Node Js
             </p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">Express
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+                Express
                 Js</p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">React Js
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+                React Js
             </p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">Heroku
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+                Heroku
             </p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">EJS</p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">Mongo DB
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+                EJS</p>
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+                Mongo DB
             </p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">Mongoose
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+                Mongoose
             </p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">SQL</p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">APIs</p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">Git &
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+                SQL</p>
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+                APIs</p>
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+                Git &
                 Github</p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">Linux
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+                Linux
             </p>
-            <p class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">VS Code
+            <p
+                class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
+                VS Code
             </p>
 
         </div>
@@ -226,7 +279,7 @@
     </div>
 
     <!-- Projects / Work -->
-    <div class="dark:bg-slate-700">
+    <div id="projects" class="dark:bg-slate-700">
 
         <div class="lg:w-[90vw] container mx-auto pb-[10vh] ">
 
@@ -235,7 +288,7 @@
             <div class="flex flex-wrap  justify-center lg:justify-center gap-6 lg:gap-10">
 
                 <div
-                    class="w-[80vw] md:w-[40vw] lg:w-[25vw] dark:bg-slate-800 bg-gray-100 p-4 rounded-xl shadow-xl border-2 border-gray-100 dark:border-slate-700">
+                    class="w-[80vw] md:w-[40vw] lg:w-[25vw] dark:bg-slate-800 bg-gray-100 p-4 rounded-xl shadow-xl border-2 border-gray-200 dark:border-slate-700">
                     <h1 class="mb-2 text-2xl font-semibold dark:text-cyan-200 text-teal-800">Executor</h1>
 
                     <div class="overflow-hidden rounded-md">
@@ -243,7 +296,8 @@
                             src="./images/project 01.png" alt="">
                     </div>
 
-                    <p class="mb-4 text-md dark:text-gray-400 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                    <p class="mb-4 text-md dark:text-gray-400 text-gray-600">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Rerum
                         ducimus dolorem deleniti odio quam quidem provident nemo corporis officiis, magni veritatis illo
                         iste aperiam, repudiandae Exercitationem!</p>
                     <a class="bg-blue-600 text-lg text-white p-1 px-3 rounded-md mr-2 shadow-xl" href="">Live</a>
@@ -251,7 +305,7 @@
                 </div>
 
                 <div
-                    class="w-[80vw] md:w-[40vw] lg:w-[25vw] dark:bg-slate-800 bg-gray-100 p-4 rounded-xl shadow-xl border-2 border-gray-100 dark:border-slate-700">
+                    class="w-[80vw] md:w-[40vw] lg:w-[25vw] dark:bg-slate-800 bg-gray-100 p-4 rounded-xl shadow-xl border-2 border-gray-200 dark:border-slate-700">
                     <h1 class="mb-2 text-2xl font-semibold dark:text-cyan-200 text-teal-800">Executor</h1>
 
                     <div class="overflow-hidden rounded-md">
@@ -259,7 +313,8 @@
                             src="./images/project 01.png" alt="">
                     </div>
 
-                    <p class="mb-4 text-md dark:text-gray-400 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                    <p class="mb-4 text-md dark:text-gray-400 text-gray-600">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Rerum
                         ducimus dolorem deleniti odio quam quidem provident nemo corporis officiis, magni veritatis illo
                         iste aperiam, repudiandae Exercitationem!</p>
                     <a class="bg-blue-600 text-lg text-white p-1 px-3 rounded-md mr-2 shadow-xl" href="">Live</a>
@@ -267,7 +322,7 @@
                 </div>
 
                 <div
-                    class="w-[80vw] md:w-[40vw] lg:w-[25vw] dark:bg-slate-800 bg-gray-100 p-4 rounded-xl shadow-xl border-2 border-gray-100 dark:border-slate-700">
+                    class="w-[80vw] md:w-[40vw] lg:w-[25vw] dark:bg-slate-800 bg-gray-100 p-4 rounded-xl shadow-xl border-2 border-gray-200 dark:border-slate-700">
                     <h1 class="mb-2 text-2xl font-semibold dark:text-cyan-200 text-teal-800">Executor</h1>
 
                     <div class="overflow-hidden rounded-md">
@@ -275,7 +330,8 @@
                             src="./images/project 01.png" alt="">
                     </div>
 
-                    <p class="mb-4 text-md dark:text-gray-400 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                    <p class="mb-4 text-md dark:text-gray-400 text-gray-600">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Rerum
                         ducimus dolorem deleniti odio quam quidem provident nemo corporis officiis, magni veritatis illo
                         iste aperiam, repudiandae Exercitationem!</p>
                     <a class="bg-blue-600 text-lg text-white p-1 px-3 rounded-md mr-2 shadow-xl" href="">Live</a>
@@ -283,7 +339,7 @@
                 </div>
 
                 <div
-                    class="w-[80vw] md:w-[40vw] lg:w-[25vw] dark:bg-slate-800 bg-gray-100 p-4 rounded-xl shadow-xl border-2 border-gray-100 dark:border-slate-700">
+                    class="w-[80vw] md:w-[40vw] lg:w-[25vw] dark:bg-slate-800 bg-gray-100 p-4 rounded-xl shadow-xl border-2 border-gray-200 dark:border-slate-700">
                     <h1 class="mb-2 text-2xl font-semibold dark:text-cyan-200 text-teal-800">Executor</h1>
 
                     <div class="overflow-hidden rounded-md">
@@ -291,7 +347,8 @@
                             src="./images/project 01.png" alt="">
                     </div>
 
-                    <p class="mb-4 text-md dark:text-gray-400 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                    <p class="mb-4 text-md dark:text-gray-400 text-gray-600">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Rerum
                         ducimus dolorem deleniti odio quam quidem provident nemo corporis officiis, magni veritatis illo
                         iste aperiam, repudiandae Exercitationem!</p>
                     <a class="bg-blue-600 text-lg text-white p-1 px-3 rounded-md mr-2 shadow-xl" href="">Live</a>
@@ -299,7 +356,7 @@
                 </div>
 
                 <div
-                    class="w-[80vw] md:w-[40vw] lg:w-[25vw] dark:bg-slate-800 bg-gray-100 p-4 rounded-xl shadow-xl border-2 border-gray-100 dark:border-slate-700">
+                    class="w-[80vw] md:w-[40vw] lg:w-[25vw] dark:bg-slate-800 bg-gray-100 p-4 rounded-xl shadow-xl border-2 border-gray-200 dark:border-slate-700">
                     <h1 class="mb-2 text-2xl font-semibold dark:text-cyan-200 text-teal-800">Executor</h1>
 
                     <div class="overflow-hidden rounded-md">
@@ -307,23 +364,8 @@
                             src="./images/project 01.png" alt="">
                     </div>
 
-                    <p class="mb-4 text-md dark:text-gray-400 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                        ducimus dolorem deleniti odio quam quidem provident nemo corporis officiis, magni veritatis illo
-                        iste aperiam, repudiandae Exercitationem!</p>
-                    <a class="bg-blue-600 text-lg text-white p-1 px-3 rounded-md mr-2 shadow-xl" href="">Live</a>
-                    <a class="bg-teal-600 text-lg text-white p-1 px-3 rounded-md shadow-xl" href="">Source Code</a>
-                </div>
-
-                <div
-                    class="w-[80vw] md:w-[40vw] lg:w-[25vw] dark:bg-slate-800 bg-gray-100 p-4 rounded-xl shadow-xl border-2 border-gray-100 dark:border-slate-700">
-                    <h1 class="mb-2 text-2xl font-semibold dark:text-cyan-200 text-teal-800">Executor</h1>
-
-                    <div class="overflow-hidden rounded-md">
-                        <img class=" rounded-md mb-2 hover:scale-110 transition-all duration-500"
-                            src="./images/project 01.png" alt="">
-                    </div>
-
-                    <p class="mb-4 text-md dark:text-gray-400 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                    <p class="mb-4 text-md dark:text-gray-400 text-gray-600">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Rerum
                         ducimus dolorem deleniti odio quam quidem provident nemo corporis officiis, magni veritatis illo
                         iste aperiam, repudiandae Exercitationem!</p>
                     <a class="bg-blue-600 text-lg text-white p-1 px-3 rounded-md mr-2 shadow-xl" href="">Live</a>
@@ -336,35 +378,44 @@
     </div>
     <!-- Contact Page -->
     <hr class="dark:hidden">
-    <div class="p-[5vh] dark:bg-slate-800">
+    <div id="contact" class="p-[5vh] dark:bg-slate-800">
 
-        <h1 class="py-[5vh] text-center text-4xl font-semibold text-teal-800 dark:text-cyan-300">Get In Touch</h1>
+        <h1 class="pt-[5vh] text-center text-4xl font-semibold text-teal-800 dark:text-cyan-300">Get In Touch</h1>
+        <p class="py-[2vh] md:w-[60vw] lg:w-[40vw] mx-auto text-center text-gray-800 dark:text-gray-300">Please feel free to browse my
+            portfolio and reach out to me if you have any questions or would like to collaborate on a project. Thank you
+            for taking the time to visit my portfolio!</p>
 
         <div class="flex flex-wrap justify-center gap-4">
 
             <!-- Contact -->
             <div class="w-full md:w-[40vw] lg:w-[30vw] mb-8">
-                <img class="w-full md:w-[30vw]" src="./images/contact.png" alt="">
+                <img class="w-full md:w-[30vw] mx-auto" src="./images/contact.png" alt="">
 
 
 
                 <div class="w-full items-center md:w-full flex gap-3 flex-wrap justify-center mx-auto">
+                    <a class="px-3 p-2 bg-indigo-600 hover:shadow-xl transition ease-in-out duration-500
+                     rounded-md text-white font-semibold shadow-md"
+                        href="https://drive.google.com/file/d/1CqywEVIk24fO2Q9tknGy2lKIfbvcwHmM/view?usp=share_link"
+                        target="_blank"><i class="fa-solid fa-file"></i> Resume</a>
 
-                    <a class="px-3 p-2 bg-red-400 rounded-md text-white font-semibold shadow-md" href=""><i
+                    <a class="px-3 p-2 bg-red-400 hover:shadow-xl transition ease-in-out duration-500 rounded-md text-white font-semibold shadow-md" href="mailto:vijaytamada02@gmail.com" target="_blank"><i
                             class="fa-solid fa-envelope"></i> Email</a>
-                    <a class="px-3 p-2 bg-blue-900 rounded-md text-white font-semibold shadow-md" href=""><i
-                            class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                            
+                    <a class="px-3 p-2 bg-blue-700 hover:shadow-xl transition ease-in-out duration-500 rounded-md text-white font-semibold shadow-md"
+                        href="https://www.linkedin.com/in/vijaytamada/"><i class="fa-brands fa-linkedin"
+                            target="_blank"></i> LinkedIn</a>
 
-                    <a class="px-3 p-2 bg-gray-200 rounded-md text-pink-600 font-semibold shadow-md" href=""><i
+                    <a class="px-3 p-2 hover:shadow-xl transition ease-in-out duration-500 bg-gray-200 rounded-md text-pink-600 font-semibold shadow-md" href="https://www.instagram.com/yours_truly_vijay_/" target="_blank"><i
                             class="fa-brands fa-instagram"></i> Instagram</a>
 
-                    <a class="px-3 p-2 bg-green-400 rounded-md text-white font-semibold shadow-md" href=""><i
+                    <a class="px-3 p-2 hover:shadow-xl transition ease-in-out duration-500 bg-green-400 rounded-md text-white font-semibold shadow-md" href="https://linktr.ee/vijay_cpp" target="_blank"><i
                             class="fa-solid fa-tree"></i> LinkTree</a>
 
-                    <a class="px-3 p-2 bg-blue-500 rounded-md text-white font-semibold shadow-md" href=""><i
+                    <a class="px-3 p-2 hover:shadow-xl transition ease-in-out duration-500 bg-blue-500 rounded-md text-white font-semibold shadow-md" href="tel:918617328030" target="_blank"><i
                             class="fa-solid fa-phone"></i> Phone</a>
 
-                    <a class="px-3 p-2 bg-green-500 rounded-md text-white font-semibold shadow-md" href=""><i
+                    <a class="px-3 p-2 hover:shadow-xl transition ease-in-out duration-500 bg-green-500 rounded-md text-white font-semibold shadow-md" href="https://wa.me/918617328030" target="_blank"><i
                             class="fa-brands fa-whatsapp"></i> WhatsApp</a>
                 </div>
             </div>
@@ -374,12 +425,15 @@
 
                 <form class="flex flex-col items-center justify-center gap-3">
 
-                    <input class="shadow-md p-2 w-full border-2 border-gray-400 dark:border-slate-800 dark:bg-slate-700  rounded-md" type="text"
-                        placeholder="Name" required>
-                    <input class="shadow-md p-2 w-full border-2 border-gray-400  dark:border-slate-800 dark:bg-slate-700 rounded-md" type="email"
-                        placeholder="Email" required>
-                    <textarea class="shadow-md p-2 w-full border-2 border-gray-400 dark:border-slate-800 dark:bg-slate-700  rounded-md" name="" id="" rows="8"
-                        placeholder="Any ideas or feedback?" required></textarea>
+                    <input
+                        class="shadow-md p-2 w-full border-2 border-gray-400 dark:border-slate-800 dark:bg-slate-700  rounded-md"
+                        type="text" placeholder="Name" required>
+                    <input
+                        class="shadow-md p-2 w-full border-2 border-gray-400  dark:border-slate-800 dark:bg-slate-700 rounded-md"
+                        type="email" placeholder="Email" required>
+                    <textarea
+                        class="shadow-md p-2 w-full border-2 border-gray-400 dark:border-slate-800 dark:bg-slate-700  rounded-md"
+                        name="" id="" rows="8" placeholder="Any ideas or feedback?" required></textarea>
                     <button id="form-btn" class="shadow-md bg-teal-600 text-white p-2 w-full rounded-md">Submit</button>
                 </form>
                 <h1 class="hidden p-2 text-center text-green-600 font-semibold">Successfully Submitted</h1>
@@ -401,7 +455,7 @@
                 <div class="flex items-center gap-2 ">
                     <img class="w-11 shadow rounded-full" src="./images/profile-circle.png" alt="profile-logo">
 
-                    <span class="font-sacramento text-2xl text-gray-500 dark:text-gray-300" >Vijay</span>
+                    <span class="font-sacramento text-2xl text-gray-500 dark:text-gray-300">Vijay</span>
                 </div>
 
                 <h1 class="text-gray-500 dark:text-gray-300 text-xl hidden md:block">
@@ -410,9 +464,9 @@
 
                 <!-- Icons -->
                 <div>
-                    <a href=""><i class="dark:text-gray-300 text-gray-500 text-2xl mx-2 fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="dark:text-gray-300 text-gray-500 text-2xl mx-2 fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="dark:text-gray-300 text-gray-500 text-2xl fa-solid fa-envelope mx-2"></i></a>
+                    <a href="https://www.linkedin.com/in/vijaytamada/"><i class="dark:text-gray-300 text-gray-500 text-2xl mx-2 fa-brands fa-linkedin" target="_blank"></i></a>
+                    <a href="https://www.instagram.com/yours_truly_vijay_/"><i class="dark:text-gray-300 text-gray-500 text-2xl mx-2 fa-brands fa-instagram" target="_blank"></i></a>
+                    <a href="mailto:vijaytamada02@gmail.com"><i class="dark:text-gray-300 text-gray-500 text-2xl fa-solid fa-envelope mx-2" target="_blank"></i></a>
                 </div>
             </div>
         </div>

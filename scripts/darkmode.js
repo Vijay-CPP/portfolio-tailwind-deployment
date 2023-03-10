@@ -1,11 +1,9 @@
-let darkModeBtn = document.getElementById("dark-mode-btn");
-let darkModeBtnHam = document.getElementById("dark-mode-btn-ham");
+let darkModeBtns = document.querySelectorAll(".dark-mode-btn");
 let body = document.querySelector("body")
 
-darkModeBtn.addEventListener("click", () => {
-    body.classList.toggle("dark");
-});
+darkModeBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        body.classList.toggle("dark");
+    });
+})
 
-darkModeBtnHam.addEventListener("click", () => {
-    body.classList.toggle("dark");
-});
