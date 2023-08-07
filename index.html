@@ -398,20 +398,20 @@
             <!-- Form -->
             <div class="w-[85vw] md:p-5 md:w-[40vw] lg:w-[30vw]">
 
-                <form class="flex flex-col items-center justify-center gap-3">
+                <form id="contact-form" class="flex flex-col items-center justify-center gap-3">
 
                     <input
                         class="shadow-md p-2 w-full border-2 border-gray-400 dark:border-slate-800 dark:bg-slate-700  rounded-md"
-                        type="text" placeholder="Name" required>
+                        type="text" name="name" placeholder="Name" required>
                     <input
                         class="shadow-md p-2 w-full border-2 border-gray-400  dark:border-slate-800 dark:bg-slate-700 rounded-md"
-                        type="email" placeholder="Email" required>
+                        type="email" name="email" placeholder="Email" required>
                     <textarea
                         class="shadow-md p-2 w-full border-2 border-gray-400 dark:border-slate-800 dark:bg-slate-700  rounded-md"
-                        name="" id="" rows="8" placeholder="Any ideas or feedback?" required></textarea>
-                    <button id="form-btn" class="shadow-md bg-teal-600 text-white p-2 w-full rounded-md">Submit</button>
+                        name="message" id="" rows="8" placeholder="Any ideas or feedback?" required></textarea>
+                    <button id="form-btn" type="submit" class="shadow-md bg-teal-600 text-white p-2 w-full rounded-md">Submit</button>
                 </form>
-                <h1 class="hidden p-2 text-center text-green-600 font-semibold">Successfully Submitted</h1>
+                
             </div>
 
         </div>
