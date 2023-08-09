@@ -1095,11 +1095,6 @@ video {
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.text-green-600{
-  --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity));
-}
-
 .text-pink-600{
   --tw-text-opacity: 1;
   color: rgb(219 39 119 / var(--tw-text-opacity));
@@ -1371,6 +1366,10 @@ video {
 
   .lg\:top-1\/4{
     top: 25%;
+  }
+
+  .lg\:left-10{
+    left: 2.5rem;
   }
 
   .lg\:mb-\[5vh\]{
