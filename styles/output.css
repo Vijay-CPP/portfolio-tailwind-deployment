@@ -1360,16 +1360,8 @@ video {
     left: 0px;
   }
 
-  .lg\:left-20{
-    left: 5rem;
-  }
-
   .lg\:top-1\/4{
     top: 25%;
-  }
-
-  .lg\:left-10{
-    left: 2.5rem;
   }
 
   .lg\:mb-\[5vh\]{

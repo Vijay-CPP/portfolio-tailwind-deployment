@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Animate.CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -14,10 +17,10 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 
     <!-- External Styles - Development -->
-    <!-- <link rel="stylesheet" href="./styles/output.css"> -->
+    <link rel="stylesheet" href="./styles/output.css">
 
     <!-- External Styles - Production -->
-    <link rel="stylesheet" href="styles/final.css">
+    <!-- <link rel="stylesheet" href="styles/final.css"> -->
 
     <title>T Vijay Kumar - Portfolio</title>
 </head>
@@ -107,8 +110,8 @@
         <img class="z-[5] absolute w-[75vw] md:w-[55vw] lg:w-[40vw] right-0 lg:left-0 mx-auto -bottom-20"
             src="./images/content-pic.png" alt="content-pic">
 
-        <!-- Animated Text --> 
-        <div 
+        <!-- Animated Text -->
+        <div
             class="absolute z-[7] top-24 left-8 lg:top-1/4 lg:left-13 md:top-1/4 md:left-16 top text-4xl md:text-[2.8rem] lg:text-6xl">
             <span class="text-cyan-800 dark:text-cyan-300 font-sacramento">I'm a</span>
             <p id="autotype" class="font-semibold text-cyan-900 dark:text-cyan-300 w-20"></p>
@@ -178,8 +181,8 @@
 
                     <a class="px-3 p-2 bg-indigo-600 hover:shadow-xl transition ease-in-out duration-500
                      rounded-md text-white font-semibold shadow-md"
-                        href="./files/T Vijay Kumar - Resume - Compressed.pdf"
-                        target="_blank"><i class="fa-solid fa-file"></i> Resume</a>
+                        href="./files/T Vijay Kumar - Resume - Compressed.pdf" target="_blank"><i
+                            class="fa-solid fa-file"></i> Resume</a>
 
                     <a class="px-3 p-2 bg-gray-600 hover:shadow-xl transition ease-in-out duration-500 rounded-md text-white font-semibold shadow-md"
                         href="https://github.com/Vijay-CPP" target="_blank"><i class="fa-brands fa-github"></i>
@@ -211,7 +214,7 @@
             Familiar with</h1>
 
         <div
-            class="mx-auto flex gap-4 flex-wrap w-[90vw] md:w-[60vw] lg:w-[50vw] justify-center pb-[10vh] lg:pb-[15vh]">
+            class="mx-auto flex gap-4 flex-wrap w-[90vw] md:w-[60vw] lg:w-[50vw] justify-center pb-[10vh] lg:pb-[15vh] skills-div hidden">
 
             <p
                 class="bg-white dark:bg-cyan-700 dark:text-white text-md md:text-xl p-2 text-teal-900 rounded-md shadow-md">
@@ -297,40 +300,42 @@
             <div class="flex flex-wrap  justify-center lg:justify-center gap-6 lg:gap-10">
 
                 <div
-                class="h-fit w-[80vw] md:w-[40vw] lg:w-[25vw] dark:bg-slate-800 bg-gray-100 p-4 rounded-xl shadow-xl border-2 border-gray-200 dark:border-slate-700">
-                <h1 class="mb-2 text-2xl font-semibold dark:text-cyan-200 text-teal-800">CodePen Clone</h1>
+                    class="h-fit w-[80vw] md:w-[40vw] lg:w-[25vw] dark:bg-slate-800 bg-gray-100 p-4 rounded-xl shadow-xl border-2 border-gray-200 dark:border-slate-700">
+                    <h1 class="mb-2 text-2xl font-semibold dark:text-cyan-200 text-teal-800">CodePen Clone</h1>
 
-                <div class="overflow-hidden rounded-md">
-                    <img class=" rounded-md mb-2 hover:scale-110 transition-all duration-500"
-                        src="./images/code-pen.png" alt="">
+                    <div class="overflow-hidden rounded-md">
+                        <img class=" rounded-md mb-2 hover:scale-110 transition-all duration-500"
+                            src="./images/code-pen.png" alt="">
+                    </div>
+
+                    <p class="mb-4 text-md dark:text-gray-400 text-gray-600">A web app that replicates the functionality
+                        of the popular online code editor CodePen. Realtime view HTML, CSS, and JavaScript code.
+                        Supports syntax highlighting and retains the code on Local Storage.
+                        Tech Stack: ReactJs, Tailwind CSS, CodeMirror</p>
+                    <a class="bg-blue-600 text-lg text-white p-1 px-3 rounded-md mr-2 shadow-xl"
+                        href="https://codepen-clone-vijay-cpp.vercel.app/" target="_blank">Live</a>
+                    <a class="bg-teal-600 text-lg text-white p-1 px-3 rounded-md shadow-xl"
+                        href="https://github.com/Vijay-CPP/codepen-clone" target="_blank">Source Code</a>
                 </div>
-
-                <p class="mb-4 text-md dark:text-gray-400 text-gray-600">A web app that replicates the functionality of the popular online code editor CodePen. Realtime view HTML, CSS, and JavaScript code. Supports syntax highlighting and retains the code on Local Storage.
-                    Tech Stack: ReactJs, Tailwind CSS, CodeMirror</p>
-                <a class="bg-blue-600 text-lg text-white p-1 px-3 rounded-md mr-2 shadow-xl"
-                    href="https://codepen-clone-vijay-cpp.vercel.app/" target="_blank">Live</a>
-                <a class="bg-teal-600 text-lg text-white p-1 px-3 rounded-md shadow-xl"
-                    href="https://github.com/Vijay-CPP/codepen-clone" target="_blank">Source Code</a>
-            </div>
 
                 <div
-                class="h-fit w-[80vw] md:w-[40vw] lg:w-[25vw] dark:bg-slate-800 bg-gray-100 p-4 rounded-xl shadow-xl border-2 border-gray-200 dark:border-slate-700">
-                <h1 class="mb-2 text-2xl font-semibold dark:text-cyan-200 text-teal-800">REST-API</h1>
+                    class="h-fit w-[80vw] md:w-[40vw] lg:w-[25vw] dark:bg-slate-800 bg-gray-100 p-4 rounded-xl shadow-xl border-2 border-gray-200 dark:border-slate-700">
+                    <h1 class="mb-2 text-2xl font-semibold dark:text-cyan-200 text-teal-800">REST-API</h1>
 
-                <div class="overflow-hidden rounded-md">
-                    <img class=" rounded-md mb-2 hover:scale-110 transition-all duration-500"
-                        src="./images/project-api.jpg" alt="">
+                    <div class="overflow-hidden rounded-md">
+                        <img class=" rounded-md mb-2 hover:scale-110 transition-all duration-500"
+                            src="./images/project-api.jpg" alt="">
+                    </div>
+
+                    <p class="mb-4 text-md dark:text-gray-400 text-gray-600">Provides CRUD
+                        operations (Create, Read, Update, Delete) for user
+                        information. Based on MVC (Model-View-Controller) design pattern.
+                        The API supports GET, PUT, POST, and DELETE methods.</p>
+                    <a class="bg-blue-600 text-lg text-white p-1 px-3 rounded-md mr-2 shadow-xl"
+                        href="https://user-management-rest-api.vercel.app/users" target="_blank">Live</a>
+                    <a class="bg-teal-600 text-lg text-white p-1 px-3 rounded-md shadow-xl"
+                        href="https://github.com/Vijay-CPP/user-management-rest-api" target="_blank">Source Code</a>
                 </div>
-
-                <p class="mb-4 text-md dark:text-gray-400 text-gray-600">Provides CRUD
-                    operations (Create, Read, Update, Delete) for user
-                    information. Based on MVC (Model-View-Controller) design pattern.
-                    The API supports GET, PUT, POST, and DELETE methods.</p>
-                <a class="bg-blue-600 text-lg text-white p-1 px-3 rounded-md mr-2 shadow-xl"
-                    href="https://user-management-rest-api.vercel.app/users" target="_blank">Live</a>
-                <a class="bg-teal-600 text-lg text-white p-1 px-3 rounded-md shadow-xl"
-                    href="https://github.com/Vijay-CPP/user-management-rest-api" target="_blank">Source Code</a>
-            </div>
 
                 <div
                     class="h-fit w-[80vw] md:w-[40vw] lg:w-[25vw] dark:bg-slate-800 bg-gray-100 p-4 rounded-xl shadow-xl border-2 border-gray-200 dark:border-slate-700">
@@ -390,8 +395,8 @@
                 <div class="w-full items-center md:w-full flex gap-3 flex-wrap justify-center mx-auto">
                     <a class="px-3 p-2 bg-indigo-600 hover:shadow-xl transition ease-in-out duration-500
                      rounded-md text-white font-semibold shadow-md"
-                        href="./files/T Vijay Kumar - Resume - Compressed.pdf"
-                        target="_blank"><i class="fa-solid fa-file"></i> Resume</a>
+                        href="./files/T Vijay Kumar - Resume - Compressed.pdf" target="_blank"><i
+                            class="fa-solid fa-file"></i> Resume</a>
 
                     <a class="px-3 p-2 bg-red-400 hover:shadow-xl transition ease-in-out duration-500 rounded-md text-white font-semibold shadow-md"
                         href="mailto:vijaytamada02@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>
@@ -425,9 +430,10 @@
                     <textarea
                         class="shadow-md p-2 w-full border-2 border-gray-400 dark:border-slate-800 dark:bg-slate-700  rounded-md"
                         name="message" id="" rows="8" placeholder="Any ideas or feedback?" required></textarea>
-                    <button id="form-btn" type="submit" class="shadow-md bg-teal-600 text-white p-2 w-full rounded-md">Submit</button>
+                    <button id="form-btn" type="submit"
+                        class="shadow-md bg-teal-600 text-white p-2 w-full rounded-md">Submit</button>
                 </form>
-                
+
             </div>
 
         </div>
@@ -477,8 +483,8 @@
 
     <!-- Created Scripts -->
     <script src="./scripts/autotyping.js"></script>
-    <script src="./scripts/darkmode.js"></script>
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/darkmode.js"></script>
     <script src="./scripts/form.js"></script>
     <script src="./scripts/log.js"></script>
 </body>
